@@ -37,6 +37,8 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 #### 버그바운티 사례
 * [Out-of-date Version (Apache)](https://hackerone.com/reports/184877)
     * 취약점이 있는 버전의 웹서버를 사용한다는 점을 지적한다. 해당 버전의 웹서버에 공격 가능한 CVE를 나열하고, 설명도 덧붙였다. 
+* [RCE and Complete Server Takeover of http://www.█████.starbucks.com.sg/](https://hackerone.com/reports/502758)
+    * 스택 트레이스로 얻은 웹서버 버전으로 유효한 CVE를 찾아 RCE 
 
 ### OTG-INFO-003 정보 노출을 확인하기 위해 웹 서버 메타 파일 확인 
 
@@ -69,3 +71,14 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
     * ```\n, \r, \uXXXX ``` 
 
 #### 버그바운티 사례
+
+
+## 에러 처리
+
+### OTG-ERR-002 스택 트레이스 분석
+
+#### Checklist
+
+#### 버그바운티 사례
+* [RCE and Complete Server Takeover of http://www.█████.starbucks.com.sg/](https://hackerone.com/reports/502758)
+    * 스택 트레이스로 얻은 웹서버 버전으로 유효한 CVE를 찾아 RCE 
