@@ -8,7 +8,7 @@
   <meta name="description" content="None">
   
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Welcome to MkDocs - Bug Bounty Checklist based on OWASP</title>
+  <title>Bug Bounty Checklist - Bug Bounty Checklist based on OWASP</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Welcome to MkDocs";
+    var mkdocs_page_name = "Bug Bounty Checklist";
     var mkdocs_page_input_path = "index.md";
     var mkdocs_page_url = null;
   </script>
@@ -56,7 +56,7 @@
     
     <li class="navtree toctree-l1 page current">
       <a class="current" href=".">
-        Welcome to MkDocs
+        Bug Bounty Checklist
       </a>
     </li>
     
@@ -68,31 +68,26 @@
     <ul class="subnav-l1 current">
     
       
-        <li class="toctree-l2">
-          <a class="toctree-l3" href="#commands">Commands</a>
-        </li>
-    
-      
           
 
-  <li class="toctree-l2">
-    <a href="#project-layout1">
-      Project layout1
+  <li class="toctree-l2 current with-children">
+    <a href="#information-gathering">
+      정보 수집 (Information Gathering)
       <span class="toctree-expand"></span>
     </a>
   </li>
 
 
 
-  <li class="toctree-l2">
-    <ul class="subnav-l2 toc-hidden">
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
     
       
           
 
   <li class="toctree-l3 current with-children">
-    <a href="#project-layout2">
-      Project layout2
+    <a href="#otg-info-001">
+      OTG-INFO-001 검색 엔진에 노출된 정보 탐색
       <span class="toctree-expand"></span>
     </a>
   </li>
@@ -103,38 +98,8 @@
     <ul class="subnav-l3 current">
     
       
-          
-
-  <li class="toctree-l4 current with-children">
-    <a href="#project-layout3">
-      Project layout3
-      <span class="toctree-expand"></span>
-    </a>
-  </li>
-
-
-
-  <li class="toctree-l4 current">
-    <ul class="subnav-l4 current">
-    
-      
-          
-
-  <li class="toctree-l5 current with-children">
-    <a href="#project-layout4">
-      Project layout4
-      <span class="toctree-expand"></span>
-    </a>
-  </li>
-
-
-
-  <li class="toctree-l5 current">
-    <ul class="subnav-l5 current">
-    
-      
-        <li class="toctree-l6">
-          <a class="toctree-l7" href="#project-layout5">Project layout5</a>
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#_1">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -142,10 +107,25 @@
 
       
     
-    </ul>
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#otg-info-002">
+      OTG-INFO-002 웹서버 핑거프린팅
+      <span class="toctree-expand"></span>
+    </a>
   </li>
 
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
       
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#_2">버그바운티 사례</a>
+        </li>
     
     </ul>
   </li>
@@ -185,7 +165,7 @@
     
       
     
-    <li>Welcome to MkDocs</li>
+    <li>Bug Bounty Checklist</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -195,25 +175,21 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+                <h1 id="bug-bounty-checklist">Bug Bounty Checklist</h1>
+<p>OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문서는 OTGv4 번역 문서가 아닙니다.<br>
+개인적으로 정리하는 것이기에 검증되지 않았으며, 공신력 또한 없습니다. <br>
+이 사이트는 임시 사이트이며, 언제든지 삭제될 수 있습니다. </p>
+<h2 id="information-gathering">정보 수집 (Information Gathering)</h2>
+<h3 id="otg-info-001">OTG-INFO-001 검색 엔진에 노출된 정보 탐색</h3>
+<h4 id="_1">버그바운티 사례</h4>
+<h3 id="otg-info-002">OTG-INFO-002 웹서버 핑거프린팅</h3>
+<h4 id="_2">버그바운티 사례</h4>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
+<li><a href="https://hackerone.com/reports/184877">Out-of-date Version (Apache)</a><ul>
+<li>취약점이 있는 버전의 웹서버를 사용한다는 점을 지적한다. 해당 버전의 웹서버에 공격 가능한 CVE를 나열하고, 설명도 덧붙였다. </li>
 </ul>
-<h2 id="project-layout1">Project layout1</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
-<h3 id="project-layout2">Project layout2</h3>
-<h4 id="project-layout3">Project layout3</h4>
-<h5 id="project-layout4">Project layout4</h5>
-<h6 id="project-layout5">Project layout5</h6>
+</li>
+</ul>
               
             </div>
           </div>
@@ -253,5 +229,5 @@ docs/
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-12-04 01:13:37
+Build Date UTC : 2019-12-08 03:05:56
 -->
