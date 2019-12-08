@@ -5,6 +5,8 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 1차 작업중.. OTGv4 훑어보기, 정리 중. 체크리스트의 형태는 아직 X <br>
 번역 참고 : https://ok-chklist.readthedocs.io/ko/latest/index.html
 
+---
+
 ## 정보 수집 (Information Gathering)
 
 ### OTG-INFO-001 검색 엔진에 노출된 정보 탐색
@@ -21,6 +23,8 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 	* 구글에서 찾은 URL을 이용하여 API 키 없이 API를 호출할 수 있었다.
 	* `site:*.api.도메인.com` 와 같은 쿼리로 구글링
 * [Research papers on yelp are getting indexed by google bots](https://hackerone.com/reports/207435) 
+
+---
 
 ### OTG-INFO-002 웹서버 핑거프린팅
 
@@ -40,6 +44,8 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 * [RCE and Complete Server Takeover of http://www.█████.starbucks.com.sg/](https://hackerone.com/reports/502758)
 	* 스택 트레이스로 얻은 웹서버 버전으로 유효한 CVE를 찾아 RCE 
 
+---
+
 ### OTG-INFO-003 정보 노출을 확인하기 위해 웹 서버 메타 파일 확인 
 
 #### Checklist
@@ -50,8 +56,7 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 
 #### 버그바운티 사례
 
-
-
+---
 
 ## 입력 유효성 테스트
 
@@ -78,6 +83,8 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 * [Reflected Cross site Scripting (XSS) on www.starbucks.com ](https://hackerone.com/reports/438240)
 	* HTTP 파라미터에 Return URL을 자바스크립트 스키마로 넣었다. 
 
+---
+
 ## 에러 처리
 
 ### OTG-ERR-002 스택 트레이스 분석
@@ -87,3 +94,5 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 #### 버그바운티 사례
 * [RCE and Complete Server Takeover of http://www.█████.starbucks.com.sg/](https://hackerone.com/reports/502758)
 	* 스택 트레이스로 얻은 웹서버 버전으로 유효한 CVE를 찾아 RCE 
+
+---
