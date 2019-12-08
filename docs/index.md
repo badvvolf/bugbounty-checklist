@@ -55,6 +55,9 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 #### Tools
 
 #### 버그바운티 사례
+* [Securing sensitive pages from SearchBots](https://hackerone.com/reports/3986)
+	* meta 태그 noindex, nofollow 태그가 걸려있지 않은 점을 지적함.
+	* 특히 GET 파라미터에 토큰을 넣어 보내는 경우 주의해야 한다 지적
 
 ---
 
