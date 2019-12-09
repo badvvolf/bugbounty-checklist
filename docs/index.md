@@ -61,6 +61,7 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 
 ---
 
+
 ## 입력 유효성 테스트
 
 ### OTG-INPVAL-001 반사형 XSS
@@ -85,6 +86,16 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 	* 현재 페이지 URL을 window.location.href로 가져와서 이용한다. IE나 Edge 브라우저는 window.location.href에 인코딩을 하지 않기 때문에 `https://www.thx.com/#'><img src=x onerror=alert(document.domain)>` 와 같은 URL 입력 시 XSS 가능했다.
 * [Reflected Cross site Scripting (XSS) on www.starbucks.com ](https://hackerone.com/reports/438240)
 	* HTTP 파라미터에 Return URL을 자바스크립트 스키마로 넣었다. 
+
+---
+
+### OTG-INPVAL-005 SQL 인젝션
+
+#### Checklist
+
+#### 버그바운티 사례
+* [SQL Injection on sctrack.email.uber.com.cn](https://hackerone.com/reports/150156)
+	* json 데이터를 base64로 인코딩하여 전송하는 데이터에서 SQLi가 가능했다.
 
 ---
 
