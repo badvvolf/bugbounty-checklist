@@ -99,6 +99,16 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 
 ---
 
+### OTG-INPVAL-016 HTTP Splitting/Smuggling
+
+#### Checklist
+
+#### 버그바운티 사례
+* [HTTP Request Smuggling on vpn.lob.com](https://hackerone.com/reports/694604)
+
+
+---
+
 ## 에러 처리
 
 ### OTG-ERR-002 스택 트레이스 분석
