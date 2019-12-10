@@ -1,8 +1,14 @@
 # Bug Bounty Checklist
 
+
+
+**버그바운티 참고 문서 덤프로 변질되고 있는 체크리스트.. 일단 정보를 모으는 중**
+
+
+
 OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문서는 OTGv4 번역 문서가 아닙니다.<br>
 개인적으로 정리하는 것이기에 검증되지 않았으며, 공신력 또한 없습니다. <br>
-1차 작업중.. OTGv4 훑어보기, 정리 중. 체크리스트의 형태는 아직 X <br>
+
 번역 참고 : https://ok-chklist.readthedocs.io/ko/latest/index.html
 
 ---
@@ -13,6 +19,11 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 
 #### Checklist
 
+#### Tools
+* 서치 엔진
+
+#### 자동화 
+* 자동 검색보다는 편하게 검색 가능하도록 쿼리를 모아놓고 버튼만 누르면 검색하는 게 좋겠음
 
 #### 버그바운티 사례 
 이 종류는 바운티를 잘 안 준다. 
@@ -37,6 +48,7 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 #### Tools
 * [httprint](https://net-square.com/httprint.html) : 오픈소스 X, 개인 무료. Last update : 2005
 * [httprecon](https://www.computec.ch/projekte/httprecon/) : 오픈소스, HTTPS 가능, 핑거프린트 데이터베이스 얻을 수 있음, Last update : 2009
+* [software-version-reporter](https://github.com/portswigger/software-version-reporter) : 오픈소스, Burpsuite 플러그인.
 
 #### 버그바운티 사례
 * [Out-of-date Version (Apache)](https://hackerone.com/reports/184877)
@@ -114,7 +126,6 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 
 #### 버그바운티 사례
 * [HTTP Request Smuggling on vpn.lob.com](https://hackerone.com/reports/694604)
-
 
 ---
 
