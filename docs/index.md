@@ -1,15 +1,8 @@
 # Bug Bounty Checklist
 
-
-
-**버그바운티 참고 문서 덤프로 변질되고 있는 체크리스트.. 일단 정보를 모으는 중**
-
-
-
-OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문서는 OTGv4 번역 문서가 아닙니다.<br>
-개인적으로 정리하는 것이기에 검증되지 않았으며, 공신력 또한 없습니다. <br>
-
-번역 참고 : https://ok-chklist.readthedocs.io/ko/latest/index.html
+**버그바운티 참고 문서 덤프로 변질되고 있는 체크리스트.. 일단 정보를 모으는 중** <br>
+개인 참고, 정리용 문서. 체크리스트는 추후에.. <br>
+번역 참고 https://ok-chklist.readthedocs.io/ko/latest/index.html
 
 ---
 
@@ -22,7 +15,7 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 #### Tools
 * 서치 엔진
 
-#### 자동화 
+#### 자동화 아이디어
 * 자동 검색보다는 편하게 검색 가능하도록 쿼리를 모아놓고 버튼만 누르면 검색하는 게 좋겠음
 
 #### 버그바운티 사례 
@@ -50,6 +43,9 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 * [httprecon](https://www.computec.ch/projekte/httprecon/) : 오픈소스, HTTPS 가능, 핑거프린트 데이터베이스 얻을 수 있음, Last update : 2009
 * [software-version-reporter](https://github.com/portswigger/software-version-reporter) : 오픈소스, Burpsuite 플러그인.
 
+#### 자동화 아이디어
+* 핑거프린팅으로 버전 정보를 뽑으면 CVE 추천까지 해주기
+
 #### 버그바운티 사례
 * [Out-of-date Version (Apache)](https://hackerone.com/reports/184877)
 	* 취약점이 있는 버전의 웹서버를 사용한다는 점을 지적한다. 해당 버전의 웹서버에 공격 가능한 CVE를 나열하고, 설명도 덧붙였다. 
@@ -62,7 +58,8 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 
 #### Checklist
 * robots.txt 파일 확인
-* robots.txt에서 크롤링 금지한 파일의 meta 태그 체크
+* robots.txt에서 크롤링 금지한 웹페이지의 meta 태그 체크
+* 민감한 데이터가 있는 웹페이지의 meta 태그 체크
 
 #### Tools
 
@@ -113,6 +110,9 @@ OTGv4를 기반으로 하는 버그 바운티 체크리스트입니다. 본 문�
 ### OTG-INPVAL-005 SQL 인젝션
 
 #### Checklist
+
+#### Tools
+* Burpsuite Intruder
 
 #### 버그바운티 사례
 * [SQL Injection on sctrack.email.uber.com.cn](https://hackerone.com/reports/150156)
