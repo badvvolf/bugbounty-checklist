@@ -12,7 +12,7 @@
 
 #### Checklist
 
-#### Tools
+#### 기존 Tools
 * 서치 엔진
 
 #### 자동화 아이디어
@@ -38,7 +38,7 @@
 * HTTP 헤더 필드 순서를 통해 유추
 * 400 응답 시 함께 오는 HTTP 헤더 필드 종류를 통해 유추
 
-#### Tools
+#### 기존 Tools
 * [httprint](https://net-square.com/httprint.html) : 오픈소스 X, 개인 무료. Last update : 2005
 * [httprecon](https://www.computec.ch/projekte/httprecon/) : 오픈소스, HTTPS 가능, 핑거프린트 데이터베이스 얻을 수 있음, Last update : 2009
 * [software-version-reporter](https://github.com/portswigger/software-version-reporter) : 오픈소스, Burpsuite 플러그인.
@@ -61,7 +61,7 @@
 * robots.txt에서 크롤링 금지한 웹페이지의 meta 태그 체크
 * 민감한 데이터가 있는 웹페이지의 meta 태그 체크
 
-#### Tools
+#### 기존 Tools
 
 #### 버그바운티 사례
 * [Securing sensitive pages from SearchBots](https://hackerone.com/reports/3986)
@@ -74,15 +74,32 @@
 
 #### Checklist
 
-#### Tools
+#### 기존 Tools
+
+#### 자동화 아이디어
 
 #### 버그바운티 사례
+
+---
+### OTG-INFO-005 주석이나 메타데이터 확인
+
+#### Checklist
+
+#### 기존 Tools
+
+#### 자동화 아이디어
+* 웹페이지에서 주석만 뽑고, 중요해보이는 데이터를 추천
+* 
+
+#### 버그바운티 사례
+
+
 
 ---
 
 ## 입력 유효성 테스트
 
-### OTG-INPVAL-001 반사형 XSS
+### OTG-INPVAL-001 Reflected XSS
 
 #### Checklist
 * Input Vector 찾기
@@ -106,7 +123,15 @@
 	* HTTP 파라미터에 Return URL을 자바스크립트 스키마로 넣었다. 
 
 ---
+### OTG-INPVAL-002 Stored XSS
 
+#### Checklist
+
+#### 버그바운티 사례
+* [Stored XSS in vanilla](https://hackerone.com/reports/496405)
+
+
+---
 ### OTG-INPVAL-005 SQL 인젝션
 
 #### Checklist
@@ -126,6 +151,8 @@
 
 #### 버그바운티 사례
 * [HTTP Request Smuggling on vpn.lob.com](https://hackerone.com/reports/694604)
+* [Multiple HTTP Smuggling reports](https://hackerone.com/reports/648434)
+	* 여러 프로그램의 HTTP sumggling CVE 제시
 
 ---
 
