@@ -89,7 +89,6 @@
 
 #### 자동화 아이디어
 * 웹페이지에서 주석만 뽑고, 중요해보이는 데이터를 추천
-* 
 
 #### 버그바운티 사례
 
@@ -123,6 +122,7 @@
 	* HTTP 파라미터에 Return URL을 자바스크립트 스키마로 넣었다. 
 
 ---
+
 ### OTG-INPVAL-002 Stored XSS
 
 #### Checklist
@@ -136,7 +136,7 @@
 
 #### Checklist
 
-#### Tools
+#### 기존 Tools
 * Burpsuite Intruder
 
 #### 버그바운티 사례
@@ -153,6 +153,15 @@
 * [HTTP Request Smuggling on vpn.lob.com](https://hackerone.com/reports/694604)
 * [Multiple HTTP Smuggling reports](https://hackerone.com/reports/648434)
 	* 여러 프로그램의 HTTP sumggling CVE 제시
+
+---
+
+### OTG-INPVAL-013 OS 커맨드 인젝션
+
+#### Checklist
+
+#### 버그바운티 사례
+* [Local files could be overwritten in GitLab, leading to remote command execution](https://hackerone.com/reports/587854)
 
 ---
 
