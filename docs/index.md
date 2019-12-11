@@ -165,6 +165,15 @@
 
 ---
 
+### OTG-INPVAL-014 버퍼 오버플로우
+
+#### Checklist
+
+#### 버그바운티 사례
+* [Security check failure or stack buffer overrun (crash)](https://hackerone.com/reports/481335)
+
+---
+
 ## 에러 처리
 
 ### OTG-ERR-002 스택 트레이스 분석
