@@ -108,10 +108,15 @@
 		* Form 값
 		* Hidden Form 값
 		* 미리 정의된/또는 선택한 버튼 값
+	* **툴을 이용하여 Input Vector 리스팅**
 * 필터링 우회 여부 체크
 	* ```>, <, &, /, `, ', " ``` 와 같은 HTML 특수문자
 	* ```script, javascript, img``` 와 같은 문자열
 	* ```\n, \r, \uXXXX ``` 
+	* **퍼저를 이용하여 페이로드 테스트**
+#### 자동화 아이디어
+* 주요 특수문자/키워드 필터링 여부 판단하고, XSS 가능성 높은 순으로 추천하기 
+	* 수동으로 XSS 테스트하기 전에 도움을 주는 용도
 
 #### 버그바운티 사례
 * [XSS vulnerable parameter in a location hash](https://hackerone.com/reports/146336)
@@ -129,7 +134,6 @@
 
 #### 버그바운티 사례
 * [Stored XSS in vanilla](https://hackerone.com/reports/496405)
-
 
 ---
 ### OTG-INPVAL-005 SQL 인젝션
