@@ -148,7 +148,7 @@
 * [Reflected Cross site Scripting (XSS) on www.starbucks.com ](https://hackerone.com/reports/438240)
 	* HTTP 파라미터에 Return URL을 자바스크립트 스키마로 넣었다.
 * [Reflected XSS in pubg.com](https://hackerone.com/reports/751870)
-	* GET 파라미터로 받은 값을 이용하여 무한 스크롤 페이지를 만들었다. 파라미터는 검색 쿼리같음. 이 파라미터를 필터링 없이 이용하여 XSS가 가능했음.
+	* GET 파라미터로 받은 값을 이용하여 "더 보기" 버튼을 만들었다. 파라미터는 검색 쿼리같음. 이 파라미터를 필터링 없이 이용하여 XSS가 가능했음.
 
 ---
 
