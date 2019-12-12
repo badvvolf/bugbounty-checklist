@@ -100,13 +100,21 @@
 #### Checklist
 * GET 파라미터, 쿠키 설정, HTTP 에러 발생 페이지, 독특한 HTTP 메소드 사용 지점, 커스텀 HTTP 헤더 등
 
-
 ---
 
 ### OTG-INFO-007 경로 매핑
 
 #### 기존 Tools
 * Burpsuite 
+* 크롤러
+
+---
+
+### OTG-INFO-008 웹 어플리케이션 프레임워크 핑거프린팅
+
+#### Checklist
+* 프레임워크 특유의 HTTP 헤더, 경로, 쿠키, HTML 코드로 프레임워크 식별, 버전 식별
+* 
 
 ---
 
@@ -138,7 +146,9 @@
 * [DOM XSS at https://www.thx.com in IE/Edge browser](https://hackerone.com/reports/702981)
 	* 현재 페이지 URL을 window.location.href로 가져와서 이용한다. IE나 Edge 브라우저는 window.location.href에 인코딩을 하지 않기 때문에 `https://www.thx.com/#'><img src=x onerror=alert(document.domain)>` 와 같은 URL 입력 시 XSS 가능했다.
 * [Reflected Cross site Scripting (XSS) on www.starbucks.com ](https://hackerone.com/reports/438240)
-	* HTTP 파라미터에 Return URL을 자바스크립트 스키마로 넣었다. 
+	* HTTP 파라미터에 Return URL을 자바스크립트 스키마로 넣었다.
+* [Reflected XSS in pubg.com](https://hackerone.com/reports/751870)
+	* GET 파라미터로 받은 값을 이용하여 무한 스크롤 페이지를 만들었다. 파라미터는 검색 쿼리같음. 이 파라미터를 필터링 없이 이용하여 XSS가 가능했음.
 
 ---
 
