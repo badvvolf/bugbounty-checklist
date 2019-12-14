@@ -121,9 +121,9 @@
 #### 기존 Tools
 * [Whatweb](https://www.morningstarsecurity.com/research/whatweb)
 	* 오픈소스, 현재도 업데이트 됨, 칼리 기본 툴
-* [BlindElephant]()
+* [BlindElephant](http://blindelephant.sourceforge.net/)
 	* 오픈소스, 오래됨
-* [Wappalyzer](https://www.wappalyzer.com/)
+* **[Wappalyzer](https://www.wappalyzer.com/)**
 	* 오픈소스, 현재도 업데이트 됨
 	* 간편함, 웹에서 도메인을 검색하여 핑거프린트 검색 가능
 	* 브라우저 익스텐션으로 사용 가능
