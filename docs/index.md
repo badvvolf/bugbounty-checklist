@@ -154,6 +154,17 @@
 	* HTTP 헤더나 TCP 반응을 보고 판단할 수 있음
 
 ---
+
+### OTG-CONFIG-001 네트워크/인프라 설정 테스트
+
+* 알려진 취약점, 관리 도구, 인증 시스템 등에 대한 테스트
+
+#### 버그바운티 사례
+* [Out-of-date Version (Apache)](https://hackerone.com/reports/184877)
+	* 취약점이 있는 버전의 웹서버를 사용한다는 점을 지적한다. 해당 버전의 웹서버에 공격 가능한 CVE를 나열하고, 설명도 덧붙였다. 
+
+---
+
 ## 입력 유효성 테스트
 
 ### OTG-INPVAL-001 Reflected XSS
