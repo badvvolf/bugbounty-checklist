@@ -39,9 +39,12 @@
 * 400 응답 시 함께 오는 HTTP 헤더 필드 종류를 통해 유추
 
 #### 기존 Tools
-* [httprint](https://net-square.com/httprint.html) : 오픈소스 X, 개인 무료. Last update : 2005
-* [httprecon](https://www.computec.ch/projekte/httprecon/) : 오픈소스, HTTPS 가능, 핑거프린트 데이터베이스 얻을 수 있음, Last update : 2009
-* [software-version-reporter](https://github.com/portswigger/software-version-reporter) : 오픈소스, Burpsuite 플러그인.
+* [httprint](https://net-square.com/httprint.html)
+	* 오픈소스 X, 개인 무료. Last update : 2005
+* [httprecon](https://www.computec.ch/projekte/httprecon/)
+	* 오픈소스, HTTPS 가능, 핑거프린트 데이터베이스 얻을 수 있음, Last update : 2009
+* [software-version-reporter](https://github.com/portswigger/software-version-reporter)
+	* 오픈소스, Burpsuite 플러그인.
 
 #### 자동화 아이디어
 * 핑거프린팅으로 버전 정보를 뽑으면 CVE 추천까지 해주기
@@ -114,9 +117,16 @@
 
 #### Checklist
 * 프레임워크 특유의 HTTP 헤더, 경로, 쿠키, HTML 코드로 프레임워크 식별, 버전 식별
-* 
 
----
+#### 기존 Tools
+* [Whatweb](https://www.morningstarsecurity.com/research/whatweb)
+	* 오픈소스, 현재도 업데이트 됨, 칼리 기본 툴
+* [BlindElephant]()
+	* 오픈소스, 오래됨
+* [Wappalyzer](https://www.wappalyzer.com/)
+	* 오픈소스, 현재도 업데이트 됨
+	* 간편함, 웹에서 도메인을 검색하여 핑거프린트 검색 가능
+	* 브라우저 익스텐션으로 사용 가능
 
 ## 입력 유효성 테스트
 
