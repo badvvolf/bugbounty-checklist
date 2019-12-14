@@ -128,6 +128,25 @@
 	* 간편함, 웹에서 도메인을 검색하여 핑거프린트 검색 가능
 	* 브라우저 익스텐션으로 사용 가능
 
+---
+
+### OTG-INFO-009 웹 어플리케이션 핑거프린팅
+
+#### Checklist
+* 어플리케이션 특유의 쿠키, HTML 코드, 파일 또는 디렉토리 이름
+* Dirbusting 으로 가능성 있는 파일/디렉토리 탐색
+
+#### 기존 Tools
+* [Whatweb](https://www.morningstarsecurity.com/research/whatweb)
+	* 오픈소스, 현재도 업데이트 됨, 칼리 기본 툴
+* [BlindElephant](http://blindelephant.sourceforge.net/)
+	* 오픈소스, 오래됨
+* **[Wappalyzer](https://www.wappalyzer.com/)**
+	* 오픈소스, 현재도 업데이트 됨
+	* 간편함, 웹에서 도메인을 검색하여 핑거프린트 검색 가능
+	* 브라우저 익스텐션으로 사용 가능
+
+---
 ## 입력 유효성 테스트
 
 ### OTG-INPVAL-001 Reflected XSS
