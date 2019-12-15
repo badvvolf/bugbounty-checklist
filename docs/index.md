@@ -111,6 +111,7 @@
 * Burpsuite 
 * 크롤러
 
+
 ---
 
 ### OTG-INFO-008 웹 어플리케이션 프레임워크 핑거프린팅
@@ -260,3 +261,17 @@
 	* 스택 트레이스로 얻은 웹서버 버전으로 유효한 CVE를 찾아 RCE 
 
 ---
+
+## 비즈니스 로직 테스트
+
+### OTG-BUSLOGIC-008 예기치 않은 파일 형식 업로드
+
+#### Checklist
+* 필터링 우회 
+	* 띄어쓰기, 특수문자 끼워넣기
+
+#### 버그바운티 사례 
+* [Webshell via File Upload on ecjobs.starbucks.com.cn](https://hackerone.com/reports/506646)
+	* 파일 이름의 마지막(확장자 뒤)에 띄어쓰기를 포함하여 필터링 우회
+* [XXE at ecjobs.starbucks.com.cn/retail/hxpublic_v6/hxdynamicpage6.aspx](https://hackerone.com/reports/500515)
+	* 파일 업로드 취약점을 이용해 XML 파일 업로드, XXE 까지 가능
