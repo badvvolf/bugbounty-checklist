@@ -111,6 +111,9 @@
 * Burpsuite 
 * 크롤러
 
+#### 버그바운티 사례
+* [Real Time Error Logs Through Debug Information](https://hackerone.com/reports/503283)
+	* slackb.com/debug 에 접속하니 디버깅 정보를 볼 수 있더라 보고
 
 ---
 
@@ -275,3 +278,13 @@
 	* 파일 이름의 마지막(확장자 뒤)에 띄어쓰기를 포함하여 필터링 우회
 * [XXE at ecjobs.starbucks.com.cn/retail/hxpublic_v6/hxdynamicpage6.aspx](https://hackerone.com/reports/500515)
 	* 파일 업로드 취약점을 이용해 XML 파일 업로드, XXE 까지 가능
+
+---
+
+## 클라이언트측 테스트
+
+### OTG-CLIENT-005 CSS Injection 테스트
+
+#### 버그바운티 사례 
+* [CSS Injection to disable app & potential message exfil](https://hackerone.com/reports/679969)
+	* 사용자에게 입력받은 값으로 테마를 변경하는 기능에 CSS 인젝션 가능
