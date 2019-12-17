@@ -209,6 +209,10 @@
 
 #### 버그바운티 사례
 * [Stored XSS in vanilla](https://hackerone.com/reports/496405)
+* [Cross-site Scripting (XSS) - Stored in RDoc wiki pages](https://hackerone.com/reports/662287)
+	* 필터링 부족으로 인해 클릭재킹, 피싱 공격 가능. 또한 XSS도 가능했음.
+* [Stored XSS in Snapmatic + R★Editor comments](https://hackerone.com/reports/309531)
+	* 여러 우회 방법을 이용하여 XSS 가능했음.
 
 ---
 ### OTG-INPVAL-005 SQL 인젝션
