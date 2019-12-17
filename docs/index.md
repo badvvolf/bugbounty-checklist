@@ -169,6 +169,25 @@
 
 ---
 
+### OTG-CONFIG-002 어플리케이션 플랫폼 설정 테스트
+
+* 플랫폼 설치시 딸려오는 샘플 프로그램이나 디폴트 설정을 체크한다. 권한 설정이나 방화벽 설정, 로깅 설정 등
+
+#### 버그바운티 사례
+* [Real Time Error Logs Through Debug Information](https://hackerone.com/reports/503283)
+	* slackb.com/debug 에 접속하니 디버깅 정보를 볼 수 있더라 보고
+
+
+---
+
+### OTG-CONFIG-003 민감 정보 파일 확장자 핸들링 테스트
+
+* 파일 확장자를 통해 서버에서 사용하는 기술 스택을 추측할 수 있다. 
+* 민감한 정보를 담는 확장자를 열 수 있는지 테스트한다. 
+
+
+---
+
 ## 입력 유효성 테스트
 
 ### OTG-INPVAL-001 Reflected XSS
@@ -212,7 +231,7 @@
 * [Cross-site Scripting (XSS) - Stored in RDoc wiki pages](https://hackerone.com/reports/662287)
 	* 필터링 부족으로 인해 클릭재킹, 피싱 공격 가능. 또한 XSS도 가능했음.
 * [Stored XSS in Snapmatic + R★Editor comments](https://hackerone.com/reports/309531)
-	* 여러 우회 방법을 이용하여 XSS 가능했음.
+	* 여러 우회 방법을 이용하여 XSS 가능했음. 
 
 ---
 ### OTG-INPVAL-005 SQL 인젝션
