@@ -114,6 +114,10 @@
 #### 버그바운티 사례
 * [Real Time Error Logs Through Debug Information](https://hackerone.com/reports/503283)
 	* slackb.com/debug 에 접속하니 디버깅 정보를 볼 수 있더라 보고
+* [Sub Domain Take over](https://hackerone.com/reports/111078)
+	* Broken Link Hijacking으로 버그 리포트
+* [Bulgaria - Subdomain takeover of mail.starbucks.bg](https://hackerone.com/reports/736863)
+	* `*.starbucks.*` 를 스캔하여 mail.starbucks.bg가 주인없는 서비스를 가리키고 있다는 것을 확인
 
 ---
 
@@ -177,14 +181,12 @@
 * [Real Time Error Logs Through Debug Information](https://hackerone.com/reports/503283)
 	* slackb.com/debug 에 접속하니 디버깅 정보를 볼 수 있더라 보고
 
-
 ---
 
 ### OTG-CONFIG-003 민감 정보 파일 확장자 핸들링 테스트
 
 * 파일 확장자를 통해 서버에서 사용하는 기술 스택을 추측할 수 있다. 
 * 민감한 정보를 담는 확장자를 열 수 있는지 테스트한다. 
-
 
 ---
 
