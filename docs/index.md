@@ -79,10 +79,20 @@
 * IP- > 도메인 찾기, 또는 역으로
 
 #### 기존 Tools
+* [Sublist3r](https://github.com/aboul3la/Sublist3r)
+	* 서브도메인 열거
 
 #### 자동화 아이디어
+* Subdomain takeover 취약점 찾기
+	* 서치엔진/DNS 쿼리를 이용하여 서브도메인을 찾고, takeover 가능한지 찾는다. 
+	* 검색을 통해 나온 서브도메인 + bruteforce를 이용하여 DNS 쿼리 
+	* 자주 사용하는 도메인 문구를 이용하여 쿼리
 
 #### 버그바운티 사례
+* [Sub Domain Take over](https://hackerone.com/reports/111078)
+	* Broken Link Hijacking으로 버그 리포트
+* [Bulgaria - Subdomain takeover of mail.starbucks.bg](https://hackerone.com/reports/736863)
+	* `*.starbucks.*` 를 스캔하여 mail.starbucks.bg가 주인없는 서비스를 가리키고 있다는 것을 확인
 
 ---
 ### OTG-INFO-005 주석이나 메타데이터 확인
@@ -114,10 +124,6 @@
 #### 버그바운티 사례
 * [Real Time Error Logs Through Debug Information](https://hackerone.com/reports/503283)
 	* slackb.com/debug 에 접속하니 디버깅 정보를 볼 수 있더라 보고
-* [Sub Domain Take over](https://hackerone.com/reports/111078)
-	* Broken Link Hijacking으로 버그 리포트
-* [Bulgaria - Subdomain takeover of mail.starbucks.bg](https://hackerone.com/reports/736863)
-	* `*.starbucks.*` 를 스캔하여 mail.starbucks.bg가 주인없는 서비스를 가리키고 있다는 것을 확인
 
 ---
 
