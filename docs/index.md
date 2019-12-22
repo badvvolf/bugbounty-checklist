@@ -189,10 +189,16 @@
 
 ---
 
-### OTG-CONFIG-003 민감 정보 파일 확장자 핸들링 테스트
+### OTG-CONFIG-003 파일 확장자 핸들링 테스트
 
 * 파일 확장자를 통해 서버에서 사용하는 기술 스택을 추측할 수 있다. 
 * 민감한 정보를 담는 확장자를 열 수 있는지 테스트한다. 
+
+---
+
+### OTG-CONFIG-004 백업 및 참조되지 않은 파일 테스트
+* 이름을 변경한 파일, 프로그램이 자동으로 생성한 백업(스냅샷), 잊힌 파일 등에 접근 가능한지 알아본다. 
+* 백업은 원본 파일의 확장자와 다른 확장자로 변하기때문에(ex : .old) 일반적인 문자열로 전송될 수도 있다. 서버 코드 유출 가능.
 
 ---
 
@@ -293,6 +299,17 @@
 #### 버그바운티 사례
 * [RCE and Complete Server Takeover of http://www.█████.starbucks.com.sg/](https://hackerone.com/reports/502758)
 	* 스택 트레이스로 얻은 웹서버 버전으로 유효한 CVE를 찾아 RCE 
+
+---
+
+## 암호화 테스트 
+
+### OTG-CRYPST-003 민감 데이터 암호화되지 않은 채널 전송 
+#### 버그바운티 사례
+* [Invitation reminder emails contain insecure links](https://hackerone.com/reports/327674)
+	* 메일에 http 링크가 있다는 점을 지적. (https가 아니라고)
+* [SSO through odnoklassniki uses http rather than https](https://hackerone.com/reports/703759)
+	* 로그인 페이지에서 odnoklassniki로 로그인을 누를 시 HTTP로 리다이렉트할 URL을 전송한다. 이를 이용하여 피해자의 PC에서 공격자의 계정으로 로그인할 수 있었다. 
 
 ---
 
