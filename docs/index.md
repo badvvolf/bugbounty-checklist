@@ -216,6 +216,16 @@
 
 ---
 
+### OTG-CONFIG-007 HSTS 체크
+* HTTP Strict Transport Security(HSTS) 헤더 체크
+	* 이 도메인은 HTTPS만 지원한다는 의미
+	* 
+#### 버그바운티 사례
+* [SSO through odnoklassniki uses http rather than https](https://hackerone.com/reports/703759)
+	* 로그인 페이지에서 odnoklassniki로 로그인을 누를 시 HTTP로 리다이렉트할 URL을 전송한다. 이를 이용하여 피해자의 PC에서 공격자의 계정으로 로그인할 수 있었다. 
+	* 단순히 HSTS가 없다는 것 만으로는 제보가 안 되지만, 이 경우 HSTS가 있어도 공격 가능성이 있었음. 
+
+---
 ## 입력 유효성 테스트
 
 ### OTG-INPVAL-001 Reflected XSS
@@ -323,7 +333,8 @@
 * [Invitation reminder emails contain insecure links](https://hackerone.com/reports/327674)
 	* 메일에 http 링크가 있다는 점을 지적. (https가 아니라고)
 * [SSO through odnoklassniki uses http rather than https](https://hackerone.com/reports/703759)
-	* 로그인 페이지에서 odnoklassniki로 로그인을 누를 시 HTTP로 리다이렉트할 URL을 전송한다. 이를 이용하여 피해자의 PC에서 공격자의 계정으로 로그인할 수 있었다. 
+	* 로그인 페이지에서 odnoklassniki로 로그인을 누를 시 HTTP로 리다이렉트할 URL을 전송한다. 이를 이용하여 피해자의 PC에서 공격자의 계정으로 로그인할 수 있었다.
+	* 단순히 HSTS가 없다는 것 만으로는 제보가 안 되지만, 이 경우 HSTS가 있어도 공격 가능성이 있었음. 
 
 ---
 
