@@ -223,7 +223,7 @@
 ### OTG-CONFIG-007 HSTS 체크
 * HTTP Strict Transport Security(HSTS) 헤더 체크
 	* 이 도메인은 HTTPS만 지원한다는 의미
-	* 
+
 #### 버그바운티 사례
 * [SSO through odnoklassniki uses http rather than https](https://hackerone.com/reports/703759)
 	* 로그인 페이지에서 odnoklassniki로 로그인을 누를 시 HTTP로 리다이렉트할 URL을 전송한다. 이를 이용하여 피해자의 PC에서 공격자의 계정으로 로그인할 수 있었다. 
@@ -243,6 +243,8 @@
 	* crossdomain.xml 파일에`*.example.com`과 같이 너무 관대한 규칙이 있고, 이 중 Subdomain takeover 가능한 도메인이 있다는 점을 지적
 * [OAuth 2 Authorization Bypass via CSRF and Cross Site Flashing](https://hackerone.com/reports/136582)
 	* 관대한 crossdomain.xml 규칙을 이용하여 CSRF 방어를 우회해 CSRF 함 
+* [Same Origin Policy Bypass at ██████.com](https://hackerone.com/reports/399427)
+	* crossdomain.xml에서 관대한 규칙을 발견. 해당 서브도메인을 스캐닝해본 결과 취약한 버전의 웹서버를 사용하는 도메인을 발견. CVE로 리버스 셸을 열고 파일을 업로드하여 SOP를 우회할 수 있다.
 
 ---
 
