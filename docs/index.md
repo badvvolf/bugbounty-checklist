@@ -236,6 +236,9 @@
 
 #### 버그바운티 사례
 * [Possible SOP bypass in www.starbucks.com due to insecure crossdomain.xml](https://hackerone.com/reports/244504)
+	* crossdomain.xml 파일에`*.example.com`과 같이 너무 관대한 규칙이 있고, 이 중 Subdomain takeover 가능한 도메인이 있다는 점을 지적
+* [OAuth 2 Authorization Bypass via CSRF and Cross Site Flashing](https://hackerone.com/reports/136582)
+	* 관대한 crossdomain.xml 규칙을 이용하여 CSRF 방어를 우회해 CSRF 함 
 
 ---
 
