@@ -214,6 +214,10 @@
 * TRACE, OPTIONS 등 활용
 * 임의로 생성한 메소드가 있는지 체크 
 
+#### 버그바운티 사례
+* [Weblate |Security Misconfiguration| Method Enumeration Possible on domain](https://hackerone.com/reports/230648)
+	* HTTP OPTIONS 메소드가 가능하다는 점을 지적. 바운티는 없음.
+
 ---
 
 ### OTG-CONFIG-007 HSTS 체크
