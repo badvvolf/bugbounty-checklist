@@ -261,6 +261,9 @@
 * 동일인이 여러 번 등록할 수 있는지
 * 사용자가 다른 권한으로 가입할 수 있는지
 
+#### 버그바운티 사례
+* [Bypass Email Verification using Salesforce -- Reproducible in gitlab.com](https://hackerone.com/reports/617896)
+
 ---
 
 ## 입력 유효성 테스트
