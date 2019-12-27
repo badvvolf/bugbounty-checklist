@@ -238,6 +238,9 @@
 * 지나치게 허용되는 교차 도메인 정책 악용 / 정책 파일로 취급 될 수 있는 서버 응답 생성 / 파일 업로드 기능을 사용하여 조작된 정책 파일 업로드
 	* 이를 통해 CSRF 보호를 무력화 할 수 있다. 
 
+#### 자동화 아이디어
+* crossdomain.xml 파일이 있는지 크롤링해보고, 있다면 취약한 규칙이 있는지 확인한다. 
+
 #### 버그바운티 사례
 * [Possible SOP bypass in www.starbucks.com due to insecure crossdomain.xml](https://hackerone.com/reports/244504)
 	* crossdomain.xml 파일에`*.example.com`과 같이 너무 관대한 규칙이 있고, 이 중 Subdomain takeover 가능한 도메인이 있다는 점을 지적
