@@ -27,6 +27,8 @@
 	* 구글에서 찾은 URL을 이용하여 API 키 없이 API를 호출할 수 있었다.
 	* `site:*.api.도메인.com` 와 같은 쿼리로 구글링
 * [Research papers on yelp are getting indexed by google bots](https://hackerone.com/reports/207435) 
+* [Slack token leaking in stackoverflow and devtimes](https://hackerone.com/reports/448849)
+	* 스택오버플로우와 데브타임에 슬랙 토큰이 포함된 웹훅 URL을 올렸다는 점을 지적했다. 
 
 ---
 
