@@ -271,12 +271,17 @@
 #### 버그바운티 사례
 * [Bypass Email Verification using Salesforce -- Reproducible in gitlab.com](https://hackerone.com/reports/617896)
 	* 이메일 인증 절차 없이 회원가입을 하는 방법이 있음을 지적
+
+---
+
+### OTG-IDENT-003 계정 공급 과정 테스트
+#### 버그바운티 사례
 * [Bypass Email Verification -- Able to Access Internal Gitlab Services that use Login with Gitlab and Perform Check on email domain](https://hackerone.com/reports/565883)
 	* SCIM을 이용하여 @gitlab.com 메일로 계정을 등록하면 메일 인증 없이 가입할 수 있다는 점을 지적
 
 ---
 
-### OTG-IDENT-003 계정 나열, 게싱 테스트
+### OTG-IDENT-004 계정 나열, 게싱 테스트
 * 유효한 사용자 이름을 수집할 수 있는지 테스트
 * 로그인/가입 에러 메시지를 통해 어떤 아이디가 생성되어 있는지 추측한다. 화면에 뜨는 에러 메시지나, 에러 코드 또는 성공/실패 시 URL 차이를 이용한다. 
 	* `www.foo.com/account1` 시 accout1 계정이 있다면 403, 없다면 404를 반환하는 등의 차이가 있을 수 있다
