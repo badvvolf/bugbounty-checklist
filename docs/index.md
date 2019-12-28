@@ -269,6 +269,8 @@
 #### 버그바운티 사례
 * [Bypass Email Verification using Salesforce -- Reproducible in gitlab.com](https://hackerone.com/reports/617896)
 	* 이메일 인증 절차 없이 회원가입을 하는 방법이 있음을 지적
+* [Bypass Email Verification -- Able to Access Internal Gitlab Services that use Login with Gitlab and Perform Check on email domain](https://hackerone.com/reports/565883)
+	* SCIM을 이용하여 @gitlab.com 메일로 계정을 등록하면 메일 인증 없이 가입할 수 있다는 점을 지적
 
 ---
 
