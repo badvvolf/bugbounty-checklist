@@ -345,6 +345,8 @@
 #### 버그바운티 사례
 * [SQL Injection on sctrack.email.uber.com.cn](https://hackerone.com/reports/150156)
 	* json 데이터를 base64로 인코딩하여 전송하는 데이터에서 SQLi가 가능했다.
+* [SQL Injection Extracts Starbucks Enterprise Accounting, Financial, Payroll Database](https://hackerone.com/reports/531051)
+	* XML 파일을 업로드하면 그 내용을 DB에 넣었다. 이를 통해 SQLi 할 수 있었다. 
 
 ---
 
