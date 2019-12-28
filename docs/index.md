@@ -288,6 +288,8 @@
 #### 버그바운티 사례
 * [Email enumeration at SignUp page](https://hackerone.com/reports/666722)
 	* 이미 가입한 이메일로 가입을 시도하면 에러 메시지가 떴다. 이를 통해 가입한 이메일을 열거할 수 있다는 점을 지적했다. 
+* [Email Enumeration (POC)](https://hackerone.com/reports/47627)
+	* 이메일 변경 기능에서 이미 등록된 이메일이나 잘못된 이메일을 입력했을 때 HTTP 응답 코드가 달랐다. 이를 통해 Brute force 하여 가입한 이메일을 나열할 수 있었다. 
 
 ---
 
