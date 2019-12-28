@@ -93,6 +93,9 @@
 	* Broken Link Hijacking으로 버그 리포트
 * [Bulgaria - Subdomain takeover of mail.starbucks.bg](https://hackerone.com/reports/736863)
 	* `*.starbucks.*` 를 스캔하여 mail.starbucks.bg가 주인없는 서비스를 가리키고 있다는 것을 확인
+* [Subdomain takeover at news-static.semrush.com](https://hackerone.com/reports/294201)
+	* 서브도메인 CNAME이 아마존 S3를 가리키고 있지만 아마존에 등록되어있지 않았다. 이를 subdomain takeover할 수 있었다. 도메인을 직접 구매한 뒤 PoC로 제시했다.
+
 
 ---
 ### OTG-INFO-005 주석이나 메타데이터 확인
@@ -248,6 +251,8 @@
 	* 관대한 crossdomain.xml 규칙을 이용하여 CSRF 방어를 우회해 CSRF 함 
 * [Same Origin Policy Bypass at ██████.com](https://hackerone.com/reports/399427)
 	* crossdomain.xml에서 관대한 규칙을 발견. 해당 서브도메인을 스캐닝해본 결과 취약한 버전의 웹서버를 사용하는 도메인을 발견. CVE로 리버스 셸을 열고 파일을 업로드하여 SOP를 우회할 수 있다.
+* [Crossdomain.xml too permissive on eu1.badoo.com, us1.badoo.com, etc](https://hackerone.com/reports/96662)
+	* crossdomain.xml이 너무 관대하게 설정되어 있었음.
 
 ---
 ## ID 관리 테스트
@@ -263,6 +268,7 @@
 
 #### 버그바운티 사례
 * [Bypass Email Verification using Salesforce -- Reproducible in gitlab.com](https://hackerone.com/reports/617896)
+	* 이메일 인증 절차 없이 회원가입을 하는 방법이 있음을 지적
 
 ---
 
