@@ -612,6 +612,31 @@
 
       
     
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#otg-ident-003">
+      OTG-IDENT-003 계정 나열, 게싱 테스트
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#_18">버그바운티 사례</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
     </ul>
   </li>
 
@@ -621,7 +646,7 @@
           
 
   <li class="toctree-l2">
-    <a href="#_18">
+    <a href="#_19">
       입력 유효성 테스트
       <span class="toctree-expand"></span>
     </a>
@@ -654,12 +679,12 @@
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_19">자동화 아이디어</a>
+          <a class="toctree-l5" href="#_20">자동화 아이디어</a>
         </li>
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_20">버그바운티 사례</a>
+          <a class="toctree-l5" href="#_21">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -689,7 +714,7 @@
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_21">버그바운티 사례</a>
+          <a class="toctree-l5" href="#_22">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -724,7 +749,7 @@
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_22">버그바운티 사례</a>
+          <a class="toctree-l5" href="#_23">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -754,7 +779,7 @@
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_23">버그바운티 사례</a>
+          <a class="toctree-l5" href="#_24">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -784,7 +809,7 @@
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_24">버그바운티 사례</a>
+          <a class="toctree-l5" href="#_25">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -814,7 +839,7 @@
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_25">버그바운티 사례</a>
+          <a class="toctree-l5" href="#_26">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -831,7 +856,7 @@
           
 
   <li class="toctree-l2">
-    <a href="#_26">
+    <a href="#_27">
       에러 처리
       <span class="toctree-expand"></span>
     </a>
@@ -864,7 +889,7 @@
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_27">버그바운티 사례</a>
+          <a class="toctree-l5" href="#_28">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -881,7 +906,7 @@
           
 
   <li class="toctree-l2">
-    <a href="#_28">
+    <a href="#_29">
       암호화 테스트
       <span class="toctree-expand"></span>
     </a>
@@ -909,7 +934,7 @@
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_29">버그바운티 사례</a>
+          <a class="toctree-l5" href="#_30">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -926,7 +951,7 @@
           
 
   <li class="toctree-l2">
-    <a href="#_30">
+    <a href="#_31">
       비즈니스 로직 테스트
       <span class="toctree-expand"></span>
     </a>
@@ -959,7 +984,7 @@
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_31">버그바운티 사례</a>
+          <a class="toctree-l5" href="#_32">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -976,7 +1001,7 @@
           
 
   <li class="toctree-l2">
-    <a href="#_32">
+    <a href="#_33">
       클라이언트측 테스트
       <span class="toctree-expand"></span>
     </a>
@@ -1004,7 +1029,7 @@
     
       
         <li class="toctree-l4">
-          <a class="toctree-l5" href="#_33">버그바운티 사례</a>
+          <a class="toctree-l5" href="#_34">버그바운티 사례</a>
         </li>
     
     </ul>
@@ -1397,7 +1422,27 @@
 </li>
 </ul>
 <hr />
-<h2 id="_18">입력 유효성 테스트</h2>
+<h3 id="otg-ident-003">OTG-IDENT-003 계정 나열, 게싱 테스트</h3>
+<ul>
+<li>유효한 사용자 이름을 수집할 수 있는지 테스트</li>
+<li>로그인/가입 에러 메시지를 통해 어떤 아이디가 생성되어 있는지 추측한다. 화면에 뜨는 에러 메시지나, 에러 코드 또는 성공/실패 시 URL 차이를 이용한다. <ul>
+<li><code>www.foo.com/account1</code> 시 accout1 계정이 있다면 403, 없다면 404를 반환하는 등의 차이가 있을 수 있다</li>
+<li>웹 페이지 타이틀에 에러의 이름이 있을 수 있다. </li>
+<li>200이지만 이미지나 텍스트로 에러 메시지를 보여줄 수도 있다. </li>
+</ul>
+</li>
+<li>자동으로 생성된 계정의 경우 일정 규칙에 따를 수 있다. 게싱해볼 수 있음</li>
+<li>구글링으로 찾은 ID 등을 이용해 게싱해볼 수 있음</li>
+</ul>
+<h4 id="_18">버그바운티 사례</h4>
+<ul>
+<li><a href="https://hackerone.com/reports/666722">Email enumeration at SignUp page</a><ul>
+<li>이미 가입한 이메일로 가입을 시도하면 에러 메시지가 떴다. 이를 통해 가입한 이메일을 열거할 수 있다는 점을 지적했다. </li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="_19">입력 유효성 테스트</h2>
 <h3 id="otg-inpval-001-reflected-xss">OTG-INPVAL-001 Reflected XSS</h3>
 <h4 id="checklist_9">Checklist</h4>
 <ul>
@@ -1421,14 +1466,14 @@
 </ul>
 </li>
 </ul>
-<h4 id="_19">자동화 아이디어</h4>
+<h4 id="_20">자동화 아이디어</h4>
 <ul>
 <li>주요 특수문자/키워드 필터링 여부 판단하고, XSS 가능성 높은 순으로 추천하기 <ul>
 <li>수동으로 XSS 테스트하기 전에 도움을 주는 용도</li>
 </ul>
 </li>
 </ul>
-<h4 id="_20">버그바운티 사례</h4>
+<h4 id="_21">버그바운티 사례</h4>
 <ul>
 <li><a href="https://hackerone.com/reports/146336">XSS vulnerable parameter in a location hash</a><ul>
 <li>GET 파라미터로 받은 값을 로그로 찍는 스크립트에 XSS가 가능했다.</li>
@@ -1450,7 +1495,7 @@
 <hr />
 <h3 id="otg-inpval-002-stored-xss">OTG-INPVAL-002 Stored XSS</h3>
 <h4 id="checklist_10">Checklist</h4>
-<h4 id="_21">버그바운티 사례</h4>
+<h4 id="_22">버그바운티 사례</h4>
 <ul>
 <li><a href="https://hackerone.com/reports/496405">Stored XSS in vanilla</a></li>
 <li><a href="https://hackerone.com/reports/662287">Cross-site Scripting (XSS) - Stored in RDoc wiki pages</a><ul>
@@ -1469,17 +1514,21 @@
 <ul>
 <li>Burpsuite Intruder</li>
 </ul>
-<h4 id="_22">버그바운티 사례</h4>
+<h4 id="_23">버그바운티 사례</h4>
 <ul>
 <li><a href="https://hackerone.com/reports/150156">SQL Injection on sctrack.email.uber.com.cn</a><ul>
 <li>json 데이터를 base64로 인코딩하여 전송하는 데이터에서 SQLi가 가능했다.</li>
+</ul>
+</li>
+<li><a href="https://hackerone.com/reports/531051">SQL Injection Extracts Starbucks Enterprise Accounting, Financial, Payroll Database</a><ul>
+<li>XML 파일을 업로드하면 그 내용을 DB에 넣었다. 이를 통해 SQLi 할 수 있었다. </li>
 </ul>
 </li>
 </ul>
 <hr />
 <h3 id="otg-inpval-016-http-splittingsmuggling">OTG-INPVAL-016 HTTP Splitting/Smuggling</h3>
 <h4 id="checklist_12">Checklist</h4>
-<h4 id="_23">버그바운티 사례</h4>
+<h4 id="_24">버그바운티 사례</h4>
 <ul>
 <li><a href="https://hackerone.com/reports/694604">HTTP Request Smuggling on vpn.lob.com</a></li>
 <li><a href="https://hackerone.com/reports/648434">Multiple HTTP Smuggling reports</a><ul>
@@ -1490,22 +1539,22 @@
 <hr />
 <h3 id="otg-inpval-013-os">OTG-INPVAL-013 OS 커맨드 인젝션</h3>
 <h4 id="checklist_13">Checklist</h4>
-<h4 id="_24">버그바운티 사례</h4>
+<h4 id="_25">버그바운티 사례</h4>
 <ul>
 <li><a href="https://hackerone.com/reports/587854">Local files could be overwritten in GitLab, leading to remote command execution</a></li>
 </ul>
 <hr />
 <h3 id="otg-inpval-014">OTG-INPVAL-014 버퍼 오버플로우</h3>
 <h4 id="checklist_14">Checklist</h4>
-<h4 id="_25">버그바운티 사례</h4>
+<h4 id="_26">버그바운티 사례</h4>
 <ul>
 <li><a href="https://hackerone.com/reports/481335">Security check failure or stack buffer overrun (crash)</a></li>
 </ul>
 <hr />
-<h2 id="_26">에러 처리</h2>
+<h2 id="_27">에러 처리</h2>
 <h3 id="otg-err-002">OTG-ERR-002 스택 트레이스 분석</h3>
 <h4 id="checklist_15">Checklist</h4>
-<h4 id="_27">버그바운티 사례</h4>
+<h4 id="_28">버그바운티 사례</h4>
 <ul>
 <li><a href="https://hackerone.com/reports/502758">RCE and Complete Server Takeover of http://www.█████.starbucks.com.sg/</a><ul>
 <li>스택 트레이스로 얻은 웹서버 버전으로 유효한 CVE를 찾아 RCE </li>
@@ -1513,9 +1562,9 @@
 </li>
 </ul>
 <hr />
-<h2 id="_28">암호화 테스트</h2>
+<h2 id="_29">암호화 테스트</h2>
 <h3 id="otg-crypst-003">OTG-CRYPST-003 민감 데이터 암호화되지 않은 채널 전송</h3>
-<h4 id="_29">버그바운티 사례</h4>
+<h4 id="_30">버그바운티 사례</h4>
 <ul>
 <li><a href="https://hackerone.com/reports/327674">Invitation reminder emails contain insecure links</a><ul>
 <li>메일에 http 링크가 있다는 점을 지적. (https가 아니라고)</li>
@@ -1528,7 +1577,7 @@
 </li>
 </ul>
 <hr />
-<h2 id="_30">비즈니스 로직 테스트</h2>
+<h2 id="_31">비즈니스 로직 테스트</h2>
 <h3 id="otg-buslogic-008">OTG-BUSLOGIC-008 예기치 않은 파일 형식 업로드</h3>
 <h4 id="checklist_16">Checklist</h4>
 <ul>
@@ -1537,7 +1586,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="_31">버그바운티 사례</h4>
+<h4 id="_32">버그바운티 사례</h4>
 <ul>
 <li><a href="https://hackerone.com/reports/506646">Webshell via File Upload on ecjobs.starbucks.com.cn</a><ul>
 <li>파일 이름의 마지막(확장자 뒤)에 띄어쓰기를 포함하여 필터링 우회</li>
@@ -1549,9 +1598,9 @@
 </li>
 </ul>
 <hr />
-<h2 id="_32">클라이언트측 테스트</h2>
+<h2 id="_33">클라이언트측 테스트</h2>
 <h3 id="otg-client-005-css-injection">OTG-CLIENT-005 CSS Injection 테스트</h3>
-<h4 id="_33">버그바운티 사례</h4>
+<h4 id="_34">버그바운티 사례</h4>
 <ul>
 <li><a href="https://hackerone.com/reports/679969">CSS Injection to disable app &amp; potential message exfil</a><ul>
 <li>사용자에게 입력받은 값으로 테마를 변경하는 기능에 CSS 인젝션 가능</li>
@@ -1597,5 +1646,5 @@
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-12-28 01:14:26
+Build Date UTC : 2019-12-28 03:45:15
 -->
