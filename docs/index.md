@@ -312,6 +312,8 @@
 ### 버그바운티 사례
 * [Login form on non-HTTPS page](https://hackerone.com/reports/214571)
 	* HTTP로 ID/PW를 전송한다는 점을 지적했다.
+* [Login form on non-HTTPS page on http://stream.highwebmedia.com/auth/login/](https://hackerone.com/reports/386735)
+	* HTTP로 ID/PW를 보낸다는 점을 지적했다. 
 
 ---
 ### OTG-AUTHN-002 디폴트 계정 테스트
@@ -367,6 +369,9 @@
 	* 필터링 부족으로 인해 클릭재킹, 피싱 공격 가능. 또한 XSS도 가능했음.
 * [Stored XSS in Snapmatic + R★Editor comments](https://hackerone.com/reports/309531)
 	* 여러 우회 방법을 이용하여 XSS 가능했음. 
+* [Stored XSS in comments](https://hackerone.com/reports/148751)
+	* 댓글에 글쓴이의 웹사이트 URL이 앵커 태그의 href 속성으로 들어갔다. 웹사이트 URL을 javascript 스키마로 쓰면 XSS가 가능했다. 
+
 
 ---
 ### OTG-INPVAL-005 SQL 인젝션
