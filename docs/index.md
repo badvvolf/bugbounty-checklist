@@ -97,6 +97,9 @@
 	* `*.starbucks.*` 를 스캔하여 mail.starbucks.bg가 주인없는 서비스를 가리키고 있다는 것을 확인
 * [Subdomain takeover at news-static.semrush.com](https://hackerone.com/reports/294201)
 	* 서브도메인 CNAME이 아마존 S3를 가리키고 있지만 아마존에 등록되어있지 않았다. 이를 subdomain takeover할 수 있었다. 도메인을 직접 구매한 뒤 PoC로 제시했다.
+* [Subdomain takeover on slack.augur.net pointing to GitHub Pages](https://hackerone.com/reports/382995)
+	* 서브도메인이 존재하지 않는 Github 페이지를 가리키고 있었다. Github 페이지를 생성하고 커스텀 도메인으로 해당 서브도메인을 등록하여 subdomain takeover했다. 
+
 
 ---
 ### OTG-INFO-005 주석이나 메타데이터 확인
@@ -373,7 +376,6 @@
 	* 여러 우회 방법을 이용하여 XSS 가능했음. 
 * [Stored XSS in comments](https://hackerone.com/reports/148751)
 	* 댓글에 글쓴이의 웹사이트 URL이 앵커 태그의 href 속성으로 들어갔다. 웹사이트 URL을 javascript 스키마로 쓰면 XSS가 가능했다. 
-
 
 ---
 ### OTG-INPVAL-005 SQL 인젝션
