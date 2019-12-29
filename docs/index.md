@@ -311,6 +311,14 @@
 * HTTPS이더라도, GET 메소드 URL 파라미터에 비밀번호 등을 보내면 안 된다. 이를 체크한다. 
 
 ---
+### OTG-AUTHN-002 디폴트 계정 테스트
+### 버그바운티 사례
+* [Thailand – a small number of alarm system portals accessible with the default credentials](https://hackerone.com/reports/406486)
+	* AAP IP Module alarm system 의 디폴트 계정을 이용할 수 있다는 점을 지적했다.
+* [SAP Server - default credentials enabled](https://hackerone.com/reports/195163)
+	* SAP 서버의 디폴트 계정을 이용할 수 있다는 점을 지적했다. 
+
+---
 
 ## 입력 유효성 테스트
 
