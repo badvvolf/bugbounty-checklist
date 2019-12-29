@@ -309,6 +309,9 @@
 * 로그인 시에 HTTP -> HTTPS로 전환하는 경우 SSL strip 공격이 가능한지 체크한다. 
 	* HSTS 헤더 체크
 * HTTPS이더라도, GET 메소드 URL 파라미터에 비밀번호 등을 보내면 안 된다. 이를 체크한다. 
+### 버그바운티 사례
+* [Login form on non-HTTPS page](https://hackerone.com/reports/214571)
+	* HTTP로 ID/PW를 전송한다는 점을 지적했다.
 
 ---
 ### OTG-AUTHN-002 디폴트 계정 테스트
@@ -433,6 +436,8 @@
 	* 단순히 HSTS가 없다는 것 만으로는 제보가 안 되지만, 이 경우 HSTS가 있어도 공격 가능성이 있었음. 
 * [Unsecure cookies, cookie flag secure not set](https://hackerone.com/reports/6877)
 	* 세션 쿠키나 중요한 쿠키에는 secure flag를 설정해야 하는데, 이를 설정하지 않았다고 지적했다. 
+* [Login form on non-HTTPS page](https://hackerone.com/reports/214571)
+	* HTTP로 ID/PW를 전송한다는 점을 지적했다.
 
 ---
 
