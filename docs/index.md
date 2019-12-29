@@ -98,7 +98,6 @@
 * [Subdomain takeover at news-static.semrush.com](https://hackerone.com/reports/294201)
 	* 서브도메인 CNAME이 아마존 S3를 가리키고 있지만 아마존에 등록되어있지 않았다. 이를 subdomain takeover할 수 있었다. 도메인을 직접 구매한 뒤 PoC로 제시했다.
 
-
 ---
 ### OTG-INFO-005 주석이나 메타데이터 확인
 
@@ -303,6 +302,15 @@
 * OTG-IDENT-004와 거의 유사한듯.
 
 ---
+## 인증 테스트
+
+### OTG-AUTHN-001 암호화 채널에서 인증 정보 전송 테스트
+* HTTP로 로그인 정보를 보내는지 체크한다. 
+* 로그인 시에 HTTP -> HTTPS로 전환하는 경우 SSL strip 공격이 가능한지 체크한다. 
+	* HSTS 헤더 체크
+
+
+---
 
 ## 입력 유효성 테스트
 
@@ -415,6 +423,8 @@
 * [SSO through odnoklassniki uses http rather than https](https://hackerone.com/reports/703759)
 	* 로그인 페이지에서 odnoklassniki로 로그인을 누를 시 HTTP로 리다이렉트할 URL을 전송한다. 이를 이용하여 피해자의 PC에서 공격자의 계정으로 로그인할 수 있었다.
 	* 단순히 HSTS가 없다는 것 만으로는 제보가 안 되지만, 이 경우 HSTS가 있어도 공격 가능성이 있었음. 
+* [Unsecure cookies, cookie flag secure not set](https://hackerone.com/reports/6877)
+	* 세션 쿠키나 중요한 쿠키에는 secure flag를 설정해야 하는데, 이를 설정하지 않았다고 지적했다. 
 
 ---
 
