@@ -83,6 +83,11 @@
 #### 기존 Tools
 * [Sublist3r](https://github.com/aboul3la/Sublist3r)
 	* 서브도메인 열거
+* [VHostScan](https://github.com/codingo/VHostScan)
+* [Amass](https://github.com/OWASP/Amass) 
+	* [참고글](https://0xpatrik.com/subdomain-enumeration-2019/) 
+	* OWASP의 서브도메인 툴
+* [dnspop](https://github.com/bitquark/dnspop)
 
 #### 자동화 아이디어
 * Subdomain takeover 취약점 찾기
