@@ -254,6 +254,8 @@
 	* crossdomain.xml에서 관대한 규칙을 발견. 해당 서브도메인을 스캐닝해본 결과 취약한 버전의 웹서버를 사용하는 도메인을 발견. CVE로 리버스 셸을 열고 파일을 업로드하여 SOP를 우회할 수 있다.
 * [Crossdomain.xml too permissive on eu1.badoo.com, us1.badoo.com, etc](https://hackerone.com/reports/96662)
 	* crossdomain.xml이 너무 관대하게 설정되어 있었음.
+* [Risk of having secure=false in a crossdomain.xml](https://hackerone.com/reports/105463)
+	* crossdomain.xml의 allow-access-from 노드에 secure="false" 설정은 안전하지 않다는 점을 지적했다. HTTP 요청도 허용하겠다는 의미.
 
 ---
 ## ID 관리 테스트
